@@ -48,7 +48,7 @@ def simulate_game():
         action = choose_action(player_total, dealer_card)
         
         if action == 1:  # Hit
-            new_card = random.randint(2, 11)  # In reality, this should come from the game logic
+            new_card = random.randint(2, 11)  
             player_total += new_card
             
             if player_total > 21:  # Bust
